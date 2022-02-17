@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useRouter } from "next/router";
 
 
@@ -9,6 +10,8 @@ const details = () => {
     return (
         <h2>
             dynamic routing the number is : {detailsid}
+
+            
         </h2>
     );
 }

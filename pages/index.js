@@ -1,8 +1,11 @@
 import Head from 'next/head'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 import styles from '../styles/Home.module.css'
 
 
 export default function Home() {
+  const router = useRouter()
   return (
     <div className={styles.container}>
       <Head>
@@ -12,7 +15,31 @@ export default function Home() {
       </Head>
 
    
-    <h1>Hellow Nextjs in  first tutirial</h1>
+    <h1>Hellow Nextjs in  first tutirial</h1> 
+
+    <Link href='/About'>
+      <a>About </a>
+    </Link>
+
+
+    <Link href='/profile'>
+      <a>Profile </a>
+    </Link>
+
+    <Link href='/Blog' replace>
+      <a>Blog </a>
+    </Link>
+
+
+    <Link href='/Products'>
+      <a>Products </a>
+    </Link>
+
+
+
+    <button onClick={()=>router.push('/Blog/first')}>Blog first page </button>
+      
+      
       
 
 

@@ -13,21 +13,15 @@ export async function getStaticProps(context){
 
 export async function getStaticPaths({posts}) {
 
-    const res = await fetch(`https://jsonplaceholder.typicode.com/posts`)
-    const data =await res.json();
-    
-    const paths =data.map(post =>{
-        return{
-            params :{
-                postId:`${post.id}`
-            }
-        }
-    })
-    
+    console.log(posts);
 
     return {
-      paths,
-      fallback: false // false or 'blocking'
+      paths: [
+        {
+             params: {postId:'1'}
+        }
+      ],
+      fallback: true // false or 'blocking'
     };
   }
 

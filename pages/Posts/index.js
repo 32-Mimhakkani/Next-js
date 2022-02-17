@@ -21,10 +21,13 @@ const Post = ({posts}) => {
             {
                 posts.map(post =>
                     <div key={post.id}>
-                        <Link href={`/Posts/${post.id}`} passHref> 
+                    
                            <h5>{post.title}</h5>
-                         </Link>
-                        <p>{post.body}</p>
+                        
+                          <p>{post.body}</p>
+                        <Link href={`/Posts/${post.id}`} passHref> 
+                        <button>Single Details{post.id}</button> 
+                        </Link>
                         
                     
                    </div>

@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 
-const dynamic_nested_routing = () => {
+const Dynamic_nested_routing = () => {
     const router = useRouter();
 
     const {rev_id}=router.query
@@ -11,4 +11,4 @@ const dynamic_nested_routing = () => {
     );
 }
 
-export default dynamic_nested_routing;
+export default Dynamic_nested_routing;

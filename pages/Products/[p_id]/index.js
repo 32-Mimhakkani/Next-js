@@ -1,11 +1,11 @@
-import Link from "next/link";
+
 import { useRouter } from "next/router";
 
 
-const details = () => {
+const Details = () => {
        const router = useRouter();
        const detailsid =router.query.p_id
-   details
+
 
     return (
         <h2>
@@ -16,4 +16,4 @@ const details = () => {
     );
 }
 
-export default details;
+export default Details;

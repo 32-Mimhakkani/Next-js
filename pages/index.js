@@ -36,7 +36,10 @@ export default function Home() {
     </Link>
 
 
-
+    <Link href='/Posts/'>
+      <a>Post </a>
+    </Link>
+    
     <button onClick={()=>router.push('/Blog/first')}>Blog first page </button>
       
       
